@@ -16,7 +16,7 @@
   
   <body>
     <main>
-      <header> Things About Me</header>
+      <header> Things About Me </header>
       <div>
         <a href="https://www.youtube.com/watch?v=rYSAbdrQD6U&ab_channel=WorldHeritageJourney" target="_blank">
           <img src="IMG_4231.JPG" alt="Haley's picture" width="504" height="378">
@@ -58,8 +58,8 @@
         <ul>
           <li> Vietnam 
             <ul>
-              <li> Ba Na Hills </li>
-              <li> Hoi An </li>
+              <li> Bà Nà Hills </li>
+              <li> Hội An </li>
               <li> VinPearl Themepark </li>
               
             </ul>
@@ -79,16 +79,32 @@
             </ul>
           </li>
         </ul>
+        <p> Change size of browser to see different images. <button style="button"> More Images </button> </p>
+        
+        <template>
+          <h2> Yellow Mountain </h2>
+          <img src="IMG_4118.JPG" alt="tree" width="504" height="378">
+        </template>
         
         <picture> 
           <source srcset="bana.jpg" media="(min-width: 800px)">
           <img src="hill.png" alt="Ba Na Hills" >      
         </picture>
-      
       </section>
     </main>
     
-    <h1> Art </h1>
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="1005" y2="0%">
+          <stop offset="0%" style="stop-color:rbg(238,174,202);stop-opcacity:1" />
+          <stop offset="100%" style="stop-color:rbg(148,187,233);stop-opcacity:1" />
+        </linearGradient>
+      </defs>
+      <ellpise cx="100" cy="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Veranda" x="55" y="86"> ART </text>
+      Sorry, your browser doesn't support inline SVG.
+    </svg>
+    
     <pre>
                         To
                     think
@@ -144,12 +160,34 @@
      
     <canvas id="color" width="400" height="400" style="border:2px solid black"> </canvas>
     
-    <h1> Join the club! </h1>
+    <h1> Join the club! <input type="image" id="image" alt="Login" src="login-button.png"> </h1>
+    
+    <table>
+      <caption> Subscription Plans </caption>
+      <colgroup>
+        <col span="1" style="background-color:#beb5da">
+        <col style="background-color:#94bbe9">
+      </colgroup>
+        
+      <tr>
+        <th> TYPE </th>
+        <th> COST </th>
+      </tr>
+      <tr>
+        <td> Standard </td>
+        <td> FREE </td>
+      </tr>
+      <tr>
+        <td> Advance </td>
+        <td> $10/month </td>
+      </tr>
+    </table>
+    
     <form>
       <div>
         <label for="f_name"> Enter your first name: </label> 
         <input type="text" id="f_name" name="f_name" required>
-      </div> 
+      </div> <br>
       
       <div>
         <label for="l_name"> Enter your last name: </label> 
@@ -157,8 +195,44 @@
       </div> <br>
       
       <div>
+        <label for="bday"> Enter your birth date: </label>
+        <input type="date" id="bday" name="bday">
+      </div> <br>
+      
+      <div>
+        <label for="phone"> Enter your phone number: </label>
+        <input type="tel" id="phone" name="phone" pattern="[0,9]{3}-[0,9]{3}-[0,9]{4}" required>
+      </div> <br>
+      
+      <div>
         <label for="email"> Enter your email: </label> 
         <input type="email" id="email" required>
+      </div> <br>
+      
+      <div>
+        <label for="pass"> Password (8 characters minimum): </label>
+        <input type="password" id="pass" name="password" minlength="8" required>
+      </div> <br>
+      
+      
+      <div>
+        <label for="student"> Are you a student? </label>
+        <input list="option" id="choice" name="choice" />
+        <datalist id="option">
+          <option value="Yes">
+          <option value="No">
+          <option value="Prefer not to answer">  
+        </datalist>
+      </div>
+      
+      <div>
+        <label for="personal"> Tell us something interesting about you: </label>
+        <textarea id="personal" name="personal" rows="6" cols="50"> </textarea>
+      </div>
+      
+      <div>
+        <label for="color"> Choose a color: </label>
+        <input type="color" id="color" name="color" value="#000000">
       </div> <br>
       
       <div>
@@ -186,14 +260,40 @@
             <option> XL </option>
           </optgroup>
         </select>
+      </div> <br>
+      
+      <div>
+        <fieldset>
+          <legend> Select an animal </legend>
+          <input type="radio" id="dog" name="animal">
+          <label for="dog"> Dog </label>
+          <input type="radio" id="cat" name="animal">
+          <label for="cat"> Cat </label>
+          <input type="radio" id="elephant" name="animal">
+          <label for="elephant"> Elephant </label>
+        </fieldset>
+      </div>
+      
+      <div>
+        <label> Just some fun riddles </label>
+        <details>
+          <summary> You see a boat filled with people, yet there isn't a single person on board. How is that possible? </summary>
+          All the people on the boat are married.
+        </details>
+        
+        <details>
+          <summary> The more you take, the more you leave behind. What am I? </summary>
+          Footsteps.
+        </details>
       </div>
       
       <div>
         <input type="checkbox" name="subscribe" id="subscribe">
         <label for="subscribe"> Check this box to receive notifications. </label> 
-      </div>
+      </div> <br>
       
       <div>
+        <input type="reset" value="Reset">
         <input type="submit" value="Join!">
       </div>
     </form>
