@@ -3,13 +3,22 @@
   <head>
     <title> Lab 2 </title>
     <meta name="lab 2" content="lab 2 assignment">
+    <link rel="icon" href="viet.png" type="image/gif" size="16x16">
+    <style>
+      .content {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+      }
+    </style>
   </head>  
   
   <body>
     <main>
       <header> Things About Me</header>
       <div>
-        <a href="https://www.youtube.com/watch?v=rYSAbdrQD6U&ab_channel=WorldHeritageJourney">
+        <a href="https://www.youtube.com/watch?v=rYSAbdrQD6U&ab_channel=WorldHeritageJourney" target="_blank">
           <img src="IMG_4231.JPG" alt="Haley's picture" width="504" height="378">
         </a>
       </div>  
@@ -17,10 +26,13 @@
       <h1> Haley Tran </h1>
       <h2> Background </h2>
         <aside>
-          <p> The capacity to learn is a <b><i>gift</i></b>; the ability to learn is a <b><i>skill</i></b>; the willingness to learn is a <b><i>choice</i></b>. </p>
+          <p> The capacity to learn is a <span style="color:blue"><b><i>gift</i></b></span>; the ability to learn is a 
+              <span style="color:blue"><b><i>skill</i></b></span>; the willingness to learn is a <span style="color:blue"><b><i>choice</i></b></span>. </p>
         </aside>
         
-      <p> My name is Phuoc Kim Tran, but I go by <b>Haley</b>. My pronouns are <strong>she, her, and hers</strong>. I am in Warren College, majoring in <b>Mathematics-Computer Science</b>. I love learning new languages and engaging with new cultures through exploring their music and movies. I am interested in learning more about web development, AI, and machine learning. </p>
+      <p> My name is Phuoc Kim Tran, but I go by <b>Haley</b>. My pronouns are <strong>she, her, and hers</strong>. I am in Warren College, majoring in 
+          <b>Mathematics-Computer Science</b>. I love learning new languages and engaging with new cultures through exploring their music and movies. 
+          I am interested in learning more about web development, AI, and machine learning. </p>
       
 
       <section>
@@ -32,16 +44,30 @@
           <li> I <em>can't</em> swim. </li>
           <li> I <em>can</em> speak Vietnamese. </li>
           <li> I <em>can</em> speak Thai, but I <em>can't</em> read or write. </li>
+          <li> My favorite song is <i> Muộn Màng Là Từ Lúc </i>. </li>
+          <video>
+            <source src="song.mp4" type="video/webm">
+            Sorry, your broswer doesn't support embedded videos.
+          </video>
         </ol>
         <h3> Hobbies </h3>
         <p>  </p>
         <hr>
-        <h3> Travel Destinations </h3>
+        <h3> Travel Destinations </h3>      
         <ul>
           <li> Vietnam 
             <ul>
               <li> Ba Na Hills </li>
               <li> Hoi An </li>
+              <li> VinPearl Themepark </li>
+              <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                      src="https://www.openstreetmap.org/export/embed.html?bbox=109.21646118164062%2C12.206859886240343%2C109.24564361572267%2C12.230138367194645&amp;layer=mapnik" 
+                      style="border: 1px solid black">
+              </iframe>
+              <br>
+              <small>
+                <a href="https://www.openstreetmap.org/#map=15/12.2185/109.2311" target="_blank">View Larger Map</a>
+              </small>
             </ul>
           </li>
           <li> Thailand
@@ -52,13 +78,14 @@
           </li>
         </ul>
         
-        <figure> 
-          <img src="bana.jpg" alt="Ba Na Hills" >
-          <figcaption> Ba Na Hills </figcaption>
-        </figure>
+        <picture> 
+          <source srcset="bana.jpg" media="(min-width: 800px)">
+          <img src="hill.png" alt="Ba Na Hills" >      
+        </picture>
       
       </section>
     </main>
+    
     <h1> Art </h1>
     <pre>
                         To
@@ -98,23 +125,87 @@
     
                           monochrome as an innocent small panda.
     </pre>
-    <picture>     
-      <source srcset="hill.png" media="(min-width: 800px)">
-      <a href="https://linhaiwen.files.wordpress.com/2012/02/pandapoem.jpg?fbclid=IwAR2mHSahyAHtGWd3ymgoaBM_WXejYf1PqSl5CuLdKw3MXrVGfVAFtbeNlQk">
+    
+    <figure>           
+      <a href="https://linhaiwen.files.wordpress.com/2012/02/pandapoem.jpg?fbclid=IwAR2mHSahyAHtGWd3ymgoaBM_WXejYf1PqSl5CuLdKw3MXrVGfVAFtbeNlQk" target="_blank">
         <img src="pandapoem.jpg" alt="panda poem" />
       </a>
-    </picture>
+      <figcaption> Panda Poem </figcaption>
+      <audio controls src="poem.mp3"> Your browser does not support the <code>audio</code> element. </audio>
+    </figure>
       
-    <h1> Past Lab Assignments </h1>
+    <canvas id="color" width="400" height="400" style="border:2px solid black"> </canvas>
+    
+    <h1> Random Things </h1>
     <p> The <code>len(L)</code> method returns the length of the parameter L. </p>
      
+    <h1> Join the club! </h1>
+    <form>
+      <div>
+        <label for="f_name"> Enter your first name: </label> <br>
+        <input type="text" id="f_name" name="f_name" required>
+      </div>
+      
+      <div>
+        <label for="l_name"> Enter your last name: </label> <br>
+        <input type="text" id="l_name" name="l_name" required>
+      </div>
+      
+      <div>
+        <label for="email"> Enter your email: </label> <br>
+        <input type="email" id="email" required>
+      </div>
+      
+      <div>
+        <label for="size"> Choose your size: </label>
+        <select id="size">
+          <option value="--Please select a size--"</option>
+          
+          <optgroup label="Child">
+            <option> S </option>
+            <option> M </option>
+            <option> L </option>
+          </optgroup>
+          
+          <optgroup label="Women">
+            <option> S </option>
+            <option> M </option>
+            <option> L </option>
+            <option> XL </option>
+          </optgroup>
+          
+          <optgroup label="Men">
+            <option> S </option>
+            <option> M </option>
+            <option> L </option>
+            <option> XL </option>
+          </optgroup>
+        </select>
+      </div>
+      
+      <div>
+        <label for="subscribe"> Check this box to receive notifications. </label>
+        <input type="checkbox" name="subscribe" id="subscribe">
+      </div>
+      
+      <div>
+        <input type="submit" value="Join!">
+      </div>
+    </form>
+          
     <footer>
-      <p>©2021 CSE 110</p>
+      <p> 
+        Haley Co. <br>
+        1234 5th St. <br>
+        Somewhere City, CA 67890 <br>
+        <br>
+        © 2021 CSE 110 
+      </p>
     </footer>  
   
     <nav>
-      <a href="https://github.com/"> GitHub </a> >
-      <a href="https://haleytran.github.io/"> Haley </a> >
+      <a href="https://github.com/" target="_blank"> GitHub </a> >
+      <a href="https://haleytran.github.io/" target="_blank"> Haley </a> >
       <a href="https://haleytran.github.io/lab2/"> Lab 2 </a>
     </nav> 
   </body>
