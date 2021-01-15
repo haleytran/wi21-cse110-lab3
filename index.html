@@ -3,75 +3,71 @@
   <head>
     <title> Lab 2 </title>
     <meta name="lab 2" content="lab 2 assignment">
-    <link rel="icon" href="viet.png" type="image/png">
-    <style>
-      .content {
-        max-width: 900px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-      }
-    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
   </head>  
   
   <body>
     <main>
-      <header> Things About Me </header>
-      <div>
-        <a href="https://www.youtube.com/watch?v=rYSAbdrQD6U&ab_channel=WorldHeritageJourney" target="_blank">
-          <img src="IMG_4231.JPG" alt="Haley's picture" width="504" height="378">
-        </a>
-      </div>  
+      <header>  
+        <h1> Haley Tran </h1> 
+        <div>
+          <a href="https://www.youtube.com/watch?v=rYSAbdrQD6U&ab_channel=WorldHeritageJourney" target="_blank">
+            <img src="IMG_4231.JPG" alt="Haley's picture" width="504" height="378">
+          </a>
+        </div> 
+      </header>
       
-      <h1> Haley Tran </h1>
       <h2> Background </h2>
-        <aside>
-          <p> The capacity to learn is a <span style="color:blue"><b><i>gift</i></b></span>; the ability to learn is a 
-              <span style="color:blue"><b><i>skill</i></b></span>; the willingness to learn is a <span style="color:blue"><b><i>choice</i></b></span>. </p>
-        </aside>
-        
+      <aside>
+        <p> The capacity to learn is a <span style="color:blue"><b><i>gift</i></b></span>; the ability to learn is a 
+            <span style="color:blue"><b><i>skill</i></b></span>; the willingness to learn is a <span style="color:blue"><b><i>choice</i></b></span>. </p>
+      </aside>
+      
       <p> My name is Phuoc Kim Tran, but I go by <b>Haley</b>. My pronouns are <strong>she, her, and hers</strong>. I am in Warren College, majoring in 
           <b>Mathematics-Computer Science</b>. I love learning new languages and engaging with new cultures through exploring their music and movies. 
           I am interested in learning more about web development, AI, and machine learning. </p>
       
-
       <section>
-        <h2> Education </h2>
+        <h3> Education </h2>
         <p> College: University of California, San Diego </p>
         <p> High School: Oakland Techinical High School </p>
-        <h2> Fun Facts </h2>
+      </section>
+      
+      <section>
+        <h3> Fun Facts </h2>
         <ol> 
           <li> I <em>can't</em> swim. </li>
           <li> I <em>can</em> speak Vietnamese. </li>
           <li> I <em>can</em> speak Thai, but I <em>can't</em> read or write. </li>
           <li> My favorite song is <i> Muộn Màng Là Từ Lúc </i>. </li>   
         </ol>
+      
         <video width="500" controls>
           <source src="song.mp4" type="video/mp4">
           Sorry, your broswer doesn't support embedded videos.
         </video>
-        
-        <h3> Hobbies </h3>
-        <p>  </p>
-        <hr>
+      </section>
+      
+      <section>
+        <h2> My Travels </h2>
         <h3> Travel Destinations </h3>      
         <ul>
           <li> Vietnam 
             <ul>
               <li> Bà Nà Hills </li>
               <li> Hội An </li>
-              <li> VinPearl Themepark </li>
-              
+              <li> VinPearl Themepark </li>    
             </ul>
+            <br>
             <iframe width="425" height="350"  
                     src="https://www.openstreetmap.org/export/embed.html?bbox=109.21646118164062%2C12.206859886240343%2C109.24564361572267%2C12.230138367194645&amp;layer=mapnik" 
                     style="border: 1px solid black">
-            </iframe>
-            <br>
-            <small>
-              <a href="https://www.openstreetmap.org/#map=15/12.2185/109.2311" target="_blank">View Larger Map</a>
-            </small>
+            </iframe> 
           </li>
+          <br>
           <li> Thailand
             <ul>
               <li> Bangkok </li>
@@ -93,14 +89,16 @@
       </section>
     </main>
     
+    <hr>
+    
     <svg height="130" width="500">
       <defs>
         <linearGradient id="grad1" x1="0%" y1="0%" x2="1005" y2="0%">
-          <stop offset="0%" style="stop-color:rbg(238,174,202);stop-opcacity:1" />
-          <stop offset="100%" style="stop-color:rbg(148,187,233);stop-opcacity:1" />
+          <stop offset="0%" style="stop-color:rbg(238,174,202);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rbg(148,187,233);stop-opacity:1" />
         </linearGradient>
       </defs>
-      <ellipse cx="100" cy="85" rx="85" ry="55" fill="url(#grad1)" />
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
       <text fill="#ffffff" font-size="45" font-family="Veranda" x="55" y="86"> ART </text>
       Sorry, your browser doesn't support inline SVG.
     </svg>
@@ -152,18 +150,18 @@
     </figure>
     <audio controls src="poem.mp3"> Your browser does not support the <code>audio</code> element. </audio>
     
-    
+    <hr>
     
     <h1> Random Things </h1>
     
     <p> The <code>len(L)</code> method returns the length of the parameter L. </p>
      
-    <canvas id="color" width="400" height="400" style="border:2px solid black"> </canvas>
+    <canvas id="color" width="400" height="400" style="border:5px solid blue"> </canvas>
     
     <h1> Join the club! <input type="image" id="image" alt="Login" src="login-button.png"> </h1>
     
     <table>
-      <caption> Subscription Plans </caption>
+      <caption> <b>Subscription Plans </b> </caption>
       <colgroup>
         <col span="1" style="background-color:#beb5da">
         <col style="background-color:#94bbe9">
@@ -182,6 +180,8 @@
         <td> $10/month </td>
       </tr>
     </table>
+    
+    <br>
     
     <form>
       <div>
@@ -226,9 +226,9 @@
       </div>
       
       <div>
-        <label for="personal"> Tell us something interesting about you: </label>
+        <label for="personal"> Tell us something interesting about you: </label> <br>
         <textarea id="personal" name="personal" rows="6" cols="50"> </textarea>
-      </div>
+      </div> <br>
       
       <div>
         <label for="colors"> Choose a color: </label>
@@ -272,20 +272,20 @@
           <input type="radio" id="elephant" name="animal">
           <label for="elephant"> Elephant </label>
         </fieldset>
-      </div>
+      </div> <br>
       
       <div>
-        <label> Just some fun riddles </label>
+        <label> Just some fun riddles </label> <br>
         <details>
           <summary> You see a boat filled with people, yet there isn't a single person on board. How is that possible? </summary>
           All the people on the boat are married.
         </details>
-        
+        <br>
         <details>
           <summary> The more you take, the more you leave behind. What am I? </summary>
           Footsteps.
         </details>
-      </div>
+      </div> <br>
       
       <div>
         <input type="checkbox" name="subscribe" id="subscribe">
