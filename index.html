@@ -1,18 +1,23 @@
 <!doctype html>
 <html lang="en"> 
   <head>
-    <title> Lab 2 </title>
+    <title> Lab 2: Explore HTML </title>
     <meta name="lab 2" content="lab 2 assignment">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <nav>
+      <a href="https://github.com/" target="_blank"> GitHub </a> >
+      <a href="https://haleytran.github.io/" target="_blank"> Haley </a> >
+      <a href="https://haleytran.github.io/lab2/"> Lab 2 </a>
+    </nav>
   </head>  
   
   <body>
     <main>
       <header>  
-        <h1> Haley Tran </h1> 
+        <h1 style="color:#d8b1d1"> Haley Tran </h1> 
         <div>
           <a href="https://www.youtube.com/watch?v=rYSAbdrQD6U&ab_channel=WorldHeritageJourney" target="_blank">
             <img src="IMG_4231.JPG" alt="Haley's picture" width="504" height="378">
@@ -20,7 +25,7 @@
         </div> 
       </header>
       
-      <h2> Background </h2>
+      <h2 style="color:#17d3e1"> Background </h2>
       <aside>
         <p> The capacity to learn is a <span style="color:blue"><b><i>gift</i></b></span>; the ability to learn is a 
             <span style="color:blue"><b><i>skill</i></b></span>; the willingness to learn is a <span style="color:blue"><b><i>choice</i></b></span>. </p>
@@ -31,13 +36,13 @@
           I am interested in learning more about web development, AI, and machine learning. </p>
       
       <section>
-        <h3> Education </h3>
+        <h3 style="color:#eeaeca"> Education </h3>
         <p> College: University of California, San Diego </p>
         <p> High School: Oakland Techinical High School </p>
       </section>
       
       <section>
-        <h3> Fun Facts </h3>
+        <h3 style="color:#dd7fcf"> Fun Facts </h3>
         <ol> 
           <li> I <em>can't</em> swim. </li>
           <li> I <em>can</em> speak Vietnamese. </li>
@@ -52,19 +57,19 @@
       </section>
       
       <section>
-        <h2> My Travels </h2>
-        <h3> Travel Destinations </h3>      
+        <h2 style="color:#73dcd8"> My Travels </h2>
+        <h3 style="color:#7bdc73"> Travel Destinations </h3>      
         <ul>
           <li> Vietnam 
             <ul>
               <li> Bà Nà Hills </li>
               <li> Hội An </li>
-              <li> VinPearl Themepark </li>    
-            </ul>
-            <iframe width="425" height="350"  
+              <li> VinPearl Themepark <br> <iframe width="425" height="350"  
                     src="https://www.openstreetmap.org/export/embed.html?bbox=109.21646118164062%2C12.206859886240343%2C109.24564361572267%2C12.230138367194645&amp;layer=mapnik" 
                     style="border: 1px solid black">
-            </iframe> 
+            </iframe> </li>    
+            </ul>
+            
           </li>
           
           <li> Thailand
@@ -74,7 +79,11 @@
             </ul>
           </li>
         </ul>
-        <p> Change size of browser to see different images. <button type="button"> More Images </button> </p>
+        <p> Change size of browser to see different images. 
+          <form action="https://www.google.com/search?q=ba+na+hills&rlz=1C5CHFA_enUS830US830&source=lnms&tbm=isch&sa=X&ved=2ahUKEwimzcrGop_uAhVGA6wKHSoHAiYQ_AUoAXoECAQQAw&biw=764&bih=692" target="_blank">
+            <button type="button"> More Images </button> 
+          </form>
+        </p>
         
         <template>
           <h2> Yellow Mountain </h2>
@@ -151,13 +160,17 @@
     
     <hr>
     
-    <h1> Random Things </h1>
+    <h1 style="color:#a7c4d9"> Random Things </h1>
     
     <p> The <code>len(L)</code> method returns the length of the parameter L. </p>
      
     <canvas id="color" width="400" height="400" style="border:5px solid blue"> </canvas>
     
-    <h1> Join the club! <input type="image" id="image" alt="Login" src="login-button.png"> </h1>
+    <h1 style="color:#2ad5cd"> Join the club! 
+      <form action="http://google.com/badpage" target="_blank">
+        <input type="image" id="image" alt="Login" src="login-button.png"> 
+      </form>
+    </h1>
     
     <table>
       <caption> <b>Subscription Plans </b> </caption>
@@ -182,7 +195,7 @@
     
     <br>
     
-    <form>
+    <form action="http://google.com/badpage" target="_blank">
       <div>
         <label for="f_name"> Enter your first name: </label> 
         <input type="text" id="f_name" name="f_name" required>
@@ -274,7 +287,8 @@
       </div> <br>
       
       <div>
-        <label> Just some fun riddles </label> <br>
+        <label> Just some fun riddles </label> 
+        <br>
         <details>
           <summary> You see a boat filled with people, yet there isn't a single person on board. How is that possible? </summary>
           All the people on the boat are married.
@@ -305,13 +319,7 @@
         <br>
         © 2021 CSE 110 
       </p>
-    </footer>  
-  
-    <nav>
-      <a href="https://github.com/" target="_blank"> GitHub </a> >
-      <a href="https://haleytran.github.io/" target="_blank"> Haley </a> >
-      <a href="https://haleytran.github.io/lab2/"> Lab 2 </a>
-    </nav> 
+    </footer>     
   </body>
 </html>
 
