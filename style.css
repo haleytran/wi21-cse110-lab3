@@ -1,0 +1,27 @@
+* {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+#panda {
+  color: #b4b6de;
+}
+
+ul {
+  color: #4b92eb;
+}
+
+pre.panda {
+  color: #eb85ce;
+}
+
+a[target=_self] {
+  background-color: #ebe285;
+}
+
+a:active {
+  color: yellow;
+}
