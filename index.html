@@ -14,9 +14,6 @@
       h1 {text-align: center;}
       h2 {text-align: center;}
       h3 {text-align: center;}
-      p {text-align: center;}
-      img {margin: center;}
-      video {margin: center;}
       figcaption {text-align: center;}
       audio {margin:auto;}
       form {margin:auto;}
@@ -28,7 +25,7 @@
   <body>
     <main>
       <header>  
-        <h1 style="color:#d8b1d1"> Haley Tran </h1> 
+        <h1 style="color:#FFF"> Haley Tran </h1> 
         <nav style>
           <a href="https://github.com/" target="_blank"> GitHub </a> >
           <a href="https://haleytran.github.io/" target="_blank"> Haley </a> >
@@ -38,7 +35,7 @@
         <br>
         <div>
           <a href="https://www.youtube.com/watch?v=rYSAbdrQD6U&ab_channel=WorldHeritageJourney" target="_blank">
-            <img src="IMG_4231.JPG" alt="Haley's picture" width="504" height="378">
+            <img class="center" src="IMG_4231.JPG" alt="Haley's picture" width="504" height="378">
           </a>
         </div> 
       </header>
@@ -68,7 +65,7 @@
           <li> My favorite song is <i> Muộn Màng Là Từ Lúc </i>. </li>   
         </ol>
       
-        <video width="500" controls>
+        <video class="center" width="500" controls>
           <source src="song.mp4" type="video/mp4">
           Sorry, your broswer doesn't support embedded videos.
         </video>
@@ -101,6 +98,12 @@
         <form id="form" action="https://www.forbes.com/sites/ericawertheimzohar/2020/01/26/ba-na-hills-vietnam-the-must-see-resort-built-for-instagram/?sh=21fcbc6a4d98" target="_blank"> </form> 
         
         <button onclick="showContent()"> More Images </button> 
+        
+        <template>
+          <h2> Yellow Mountain </h2>
+          <img class="center" src="IMG_4118.JPG" alt="tree" width="504" height="378">
+        </template>
+        
         <script>
         function showContent() {
           var temp = document.getElementsByTagName("template")[0];
@@ -111,14 +114,7 @@
         
         <br>
         
-        <template>
-          <h2> Yellow Mountain </h2>
-          <img src="IMG_4118.JPG" alt="tree" width="504" height="378">
-        </template>
-        
-        <br>
-        
-        <picture> 
+        <picture class="center"> 
           <source srcset="bana.jpg" media="(min-width: 800px)">
           <img src="hill.png" alt="Ba Na Hills" >      
         </picture>
@@ -258,11 +254,11 @@
     
     <figure>           
       <a href="https://linhaiwen.files.wordpress.com/2012/02/pandapoem.jpg?fbclid=IwAR2mHSahyAHtGWd3ymgoaBM_WXejYf1PqSl5CuLdKw3MXrVGfVAFtbeNlQk" target="_blank">
-        <img src="pandapoem.jpg" alt="panda poem" />
+        <img class="center" src="pandapoem.jpg" alt="panda poem" />
       </a>
       <figcaption style="background-color:hsla(99, 100%, 64%, 0.5);"> Panda Poem </figcaption>      
     </figure>
-    <audio controls src="poem.mp3"> Your browser does not support the <code>audio</code> element. </audio>
+    <audio controls src="poem.mp3" class="center"> Your browser does not support the <code>audio</code> element. </audio>
     
     <hr>
     
