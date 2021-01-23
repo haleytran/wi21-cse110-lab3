@@ -7,10 +7,15 @@
   margin-right: 50px;
 }
 
-.center {
+.center { 
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+video { /*center video*/
+  display: block;
+  margin: 0 auto;
 }
 
 .title { /*good first panda*/
@@ -53,12 +58,6 @@ section > ol { /*good list of fun facts*/
   color: #d9b1d1;
 }
 
-figure ~ hr {
-  font-weight: bold;
-  font-size: 1cm;
-  color: #0c54d5;
-}
-
 aside + p { /*intro*/
   background-color: red; 
 }
@@ -92,7 +91,7 @@ ol > li {
   margin: 10px 70px 10px 70px;
 }
 
-br ~ form {
+/*br ~ form {
   padding: 30px 30px 30px 30px 30px;
   border-style: solid;
   border-color: rgb(131,58,180);
@@ -104,7 +103,7 @@ br ~ form {
   max-width: 800px;
   mix-width: 450px;
   position: fixed;
-}
+}*/
 
 table {
   margin: auto;
