@@ -91,7 +91,11 @@ ol > li {
   margin: 10px 70px 10px 70px;
 }
 
-table ~ form {
+p ~ ul {
+  background-color: DeepSkyBlue;
+}
+
+.form {
   padding: 30px 30px 30px 30px 30px;
   border-style: solid;
   border-color: rgb(131,58,180);
