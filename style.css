@@ -1,6 +1,6 @@
 /* This is the CSS file for Lab 3. */
 
-* {
+* { /*good*/
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 50px;
@@ -12,19 +12,19 @@
   font-size: 150%;
 }
 
-#panda {
+#panda { /*good*/
   color: #b4b6de;
 }
 
-ul {
+ul { /*good*/
   color: #4b92eb;
 }
 
-pre.panda {
+pre.panda { /*good*/
   color: #eb85ce;
 }
 
-a[target=_self] {
+a[target=_self] { /*good*/
   background-color: #ebe285;
 }
 
@@ -32,15 +32,16 @@ a:active {
   color: #afedb0;
 }
 
-h2, h3 {
+h2, h3 { /*good*/
   background-color: #f0e8eb;
 }
 
-section p {
+section p { /*good Change size of browser to see different images.*/
   color: #58a459; 
+  font-size: 30px;
 }
 
-section > ol {
+section > ol { /*good list of fun facts*/
   font-size: 0.5cm;
   color: #d9b1d1;
 }
