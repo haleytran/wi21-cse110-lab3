@@ -1,11 +1,10 @@
 /* This is the CSS file for Lab 3. */
 
 * {
-  background-color: #f0e8f1;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .title {
@@ -96,6 +95,7 @@ br ~ form {
   border-radius: 5px;
   max-width: 800px;
   mix-width: 450px;
+  position: fixed;
 }
 
 table {
@@ -117,4 +117,48 @@ span {
 
 div > li {
   display: inline; 
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+
+a.hover {
+  color: green;
+}
+
+.flex-container {
+  display: flex;
+  background-color: gray;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flex-item {
+  background-color: violet;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  grid-template-columns: auto auto auto;
+  padding: 25px;
+}
+
+.grid-item {
+  background-color: red;
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 25px;
+  justify-self: stretch;
+  text-align: center;
+  
 }
