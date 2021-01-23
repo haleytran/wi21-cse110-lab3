@@ -7,9 +7,16 @@
   margin-right: 50px;
 }
 
-.title {
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title { /*good first panda*/
   font-weight: bold;
   font-size: 150%;
+  color: hsl(0,100%,90%);
 }
 
 #panda { /*good*/
@@ -29,7 +36,7 @@ a[target=_self] { /*good*/
 }
 
 a:active {
-  color: #afedb0;
+  background-color: #afedb0;
 }
 
 h2, h3 { /*good*/
@@ -52,14 +59,14 @@ figure ~ hr {
   color: #0c54d5;
 }
 
-aside + p {
+aside + p { /*intro*/
   background-color: red; 
 }
 
 h1 {
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-  font-size: 3ch;
+  font-size: 5ch;
 }
 
 p.round {
@@ -128,7 +135,7 @@ nav {
 }
 
 a.hover {
-  color: green;
+  background-color: green;
 }
 
 .flex-container {
