@@ -1,5 +1,7 @@
+/* This is the CSS file for Lab 3. */
+
 * {
-  text-align: center;
+  background-color: #f0e8f1;
 }
 
 .title {
@@ -36,15 +38,34 @@ section p {
 }
 
 section > ol {
-  font-size: 150%;
+  font-size: 0.5cm;
   color: #d9b1d1;
 }
 
 figure ~ hr {
   font-weight: bold;
-  color: blue;
+  font-size: 1cm;
+  color: #0c54d5;
 }
 
 aside + p {
-  background-color:red; 
+  background-color: red; 
+}
+
+h1 {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  font-size: 3ch;
+}
+
+p.round {
+  border-style: dotted;
+  border-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  border-width: 9px;
+  border-radius: 5px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 2em;
 }
