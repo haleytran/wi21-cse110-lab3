@@ -91,7 +91,7 @@ ol > li {
   margin: 10px 70px 10px 70px;
 }
 
-/*br ~ form {
+table ~ form {
   padding: 30px 30px 30px 30px 30px;
   border-style: solid;
   border-color: rgb(131,58,180);
@@ -103,7 +103,7 @@ ol > li {
   max-width: 800px;
   mix-width: 450px;
   position: fixed;
-}*/
+}
 
 table {
   margin: auto;
