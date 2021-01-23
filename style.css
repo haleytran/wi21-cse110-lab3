@@ -51,6 +51,7 @@ h2, h3 { /*good*/
 section p { /*good Change size of browser to see different images.*/
   color: #58a459; 
   font-size: 30px;
+  text-align: center;
 }
 
 section > ol { /*good list of fun facts*/
