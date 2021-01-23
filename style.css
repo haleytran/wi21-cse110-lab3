@@ -97,6 +97,9 @@ p ~ ul {
 }
 
 .form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 10px 10px 10px;
   border-width: 9px;
   border-radius: 5px;
