@@ -2,7 +2,7 @@
 <html lang="en"> 
   <head>
     <title> Lab 3: Explore CSS </title>
-    <meta name="lab 2" content="lab 2 assignment">
+    <meta name="lab 3" content="lab 3 assignment">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -15,13 +15,13 @@
       h2 {text-align: center;}
       h3 {text-align: center;}
       p {text-align: center;}
-      img {margin:auto;}
-      video {margin:auto;}
+      img {margin: center;}
+      video {margin: center;}
       figcaption {text-align: center;}
       audio {margin:auto;}
       form {margin:auto;}
-      body {background-color: #5ed8e6;}
-      @media only screen and (max-width:800px) {background-color: #f0e8f1;}
+      body {background-color: #c6edf1;}
+      @media only screen and (max-width:800px) {body { background-color: #f0e8f1;}}
     </style>
   </head>  
   
@@ -29,7 +29,7 @@
     <main>
       <header>  
         <h1 style="color:#d8b1d1"> Haley Tran </h1> 
-        <nav>
+        <nav style>
           <a href="https://github.com/" target="_blank"> GitHub </a> >
           <a href="https://haleytran.github.io/" target="_blank"> Haley </a> >
           <a href="https://haleytran.github.io/lab2/" target="_blank"> Lab 2 </a> >
@@ -99,7 +99,15 @@
         </ul>
         <p> Change size of browser to see different images. </p>
         <form id="form" action="https://www.forbes.com/sites/ericawertheimzohar/2020/01/26/ba-na-hills-vietnam-the-must-see-resort-built-for-instagram/?sh=21fcbc6a4d98" target="_blank"> </form> 
-        <button type="submit" form="form" value="Images"> More Images </button> 
+        
+        <button onclick="showContent()"> More Images </button> 
+        <script>
+        function showContent() {
+          var temp = document.getElementsByTagName("template")[0];
+          var clone = temp.content.cloneNode(true);
+          document.body.appendChild(clone);
+        }
+        </script>
         
         <br>
         
